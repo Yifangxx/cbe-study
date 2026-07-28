@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>跨境电商从零起步 · 课程导航</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  /* 首页专属样式:卡片网格,移动端单列 */
+  .hero{
+    border-bottom:2px solid var(--ink); padding-bottom:1.2rem; margin-bottom:1.8rem;
+  }
+  .hero .kicker{
+    font-size:.72rem; letter-spacing:.16em; text-transform:uppercase;
+    color:var(--accent); font-weight:700;
+  }
+  .hero h1{
+    font-family:var(--serif); font-weight:700; font-size:2rem;
+    margin:.3rem 0 .5rem; line-height:1.2;
+  }
+  .hero p{ color:var(--muted); margin:.3rem 0; font-size:.95rem }
+  .hero .stats{
+    display:flex; gap:1.2rem; margin-top:.9rem; flex-wrap:wrap;
+  }
+  .hero .stats span{
+    font-size:.8rem; color:var(--muted);
+  }
+  .hero .stats b{ color:var(--ink); font-size:1.05rem }
+
+  .section-title{
+    font-family:var(--serif); font-size:1.25rem; margin:1.8rem 0 .8rem;
+    display:flex; align-items:baseline; gap:.6rem;
+  }
+  .section-title .num{
+    font-size:.8rem; color:var(--accent); font-weight:700; letter-spacing:.1em;
+  }
+
+  .grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:.8rem; margin:.6rem 0 1rem }
+  .card{
+    display:block; background:#fff; border:1px solid var(--rule); border-radius:8px;
+    padding:1rem 1.05rem; transition:all .15s; text-decoration:none; color:var(--ink);
+    border-bottom:1px solid var(--rule);
+  }
+  .card:hover{ border-color:var(--accent); box-shadow:0 2px 8px rgba(11,83,148,.1); }
+  .card .ord{
+    font-size:.7rem; color:var(--accent); font-weight:700; letter-spacing:.12em;
+  }
+  .card .t{
+    font-family:var(--serif); font-weight:700; font-size:1.05rem;
+    margin:.2rem 0 .4rem; line-height:1.3;
+  }
+  .card .d{ font-size:.82rem; color:var(--muted); line-height:1.5; margin:0 }
+  .card .badge{
+    display:inline-block; font-size:.68rem; padding:.08em .5em; border-radius:8px;
+    margin-top:.5rem; font-weight:600;
+  }
+  .badge.ok{ background:var(--ok-soft); color:var(--ok) }
+  .badge.todo{ background:#f0eee7; color:var(--muted) }
+
+  .ref-list{ list-style:none; padding:0; margin:.4rem 0; display:grid; grid-template-columns:repeat(2,1fr); gap:.6rem }
+  .ref-list a{
+    display:block; background:#fff; border:1px solid var(--rule); border-radius:6px;
+    padding:.75rem .9rem; font-size:.9rem; color:var(--ink); border-bottom:1px solid var(--rule);
+  }
+  .ref-list a:hover{ border-color:var(--accent); background:var(--accent-soft) }
+  .ref-list .ic{ margin-right:.4rem }
+
+  .doc-row{
+    display:flex; flex-wrap:wrap; gap:.5rem; margin:.4rem 0 1rem;
+  }
+  .doc-row a{
+    display:inline-block; background:#fff; border:1px solid var(--rule);
+    border-radius:20px; padding:.4rem .9rem; font-size:.85rem; color:var(--ink);
+    border-bottom:1px solid var(--rule);
+  }
+  .doc-row a:hover{ border-color:var(--accent); color:var(--accent) }
+
+  footer{
+    margin-top:2.4rem; padding-top:1rem; border-top:1px solid var(--rule);
+    font-size:.8rem; color:var(--muted); line-height:1.6;
+  }
+  footer a{ color:var(--accent) }
+
+  @media (max-width:640px){
+    .grid{ grid-template-columns:1fr; gap:.7rem }
+    .ref-list{ grid-template-columns:1fr }
+    .hero h1{ font-size:1.6rem }
+    .card{ padding:.85rem .9rem }
+    .card .t{ font-size:1rem }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="kicker">CROSS-BORDER E-COMMERCE · 从零起步</div>
+  <h1>跨境电商小白训练营</h1>
+  <p>手把手带你跑通 1 个产品的完整售卖流程 —— 从选品到第一单。</p>
+  <div class="stats">
+    <span><b>6</b> 节课</span>
+    <span><b>6</b> 张速查卡</span>
+    <span><b>4</b> 个真实案例</span>
+    <span>预算 <b>3–8K</b></span>
+  </div>
+</header>
+
+<section>
+  <h2 class="section-title"><span class="num">PART 1</span> 交互式课程(按顺序学)</h2>
+  <div class="grid">
+    <a class="card" href="lessons/0001-跨境电商是什么.html">
+      <div class="ord">第 1 课</div>
+      <div class="t">跨境电商是什么</div>
+      <p class="d">七大环节全景图 + MVP 心法,建立全局观。</p>
+      <span class="badge ok">✅ 已上线</span>
+    </a>
+    <a class="card" href="lessons/0002-选品入门.html">
+      <div class="ord">第 2 课</div>
+      <div class="t">选品入门</div>
+      <p class="d">6 大铁律 + 三步选品法 + 利润核算实操。</p>
+      <span class="badge ok">✅ 已上线</span>
+    </a>
+    <a class="card" href="#">
+      <div class="ord">第 3 课</div>
+      <div class="t">供应链与样品</div>
+      <p class="d">1688 找货 + 比价 + 样品质检。</p>
+      <span class="badge todo">🔜 开发中</span>
+    </a>
+    <a class="card" href="#">
+      <div class="ord">第 4 课</div>
+      <div class="t">开店与物流</div>
+      <p class="d">材料准备 + 开店 + FBA / 物流方案。</p>
+      <span class="badge todo">🔜 开发中</span>
+    </a>
+    <a class="card" href="#">
+      <div class="ord">第 5 课</div>
+      <div class="t">Listing 制作</div>
+      <p class="d">关键词 + 标题 + 图片 + 五点描述。</p>
+      <span class="badge todo">🔜 开发中</span>
+    </a>
+    <a class="card" href="#">
+      <div class="ord">第 6 课</div>
+      <div class="t">推广出单</div>
+      <p class="d">PPC 广告 + 数据诊断 + 拿到第一单。</p>
+      <span class="badge todo">🔜 开发中</span>
+    </a>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title"><span class="num">PART 2</span> 速查卡(随时查阅)</h2>
+  <ul class="ref-list">
+    <a href="reference/选品速查卡.html"><span class="ic">📦</span>选品速查卡</a>
+    <a href="reference/利润核算速查卡.html"><span class="ic">💰</span>利润核算速查卡</a>
+    <a href="reference/Listing速查卡.html"><span class="ic">📝</span>Listing 速查卡</a>
+    <a href="reference/广告数据速查卡.html"><span class="ic">📊</span>广告数据速查卡</a>
+    <a href="reference/开店材料速查卡.html"><span class="ic">🏪</span>开店材料速查卡</a>
+    <a href="reference/成功案例拆解.html"><span class="ic">🏆</span>成功案例拆解</a>
+  </ul>
+</section>
+
+<section>
+  <h2 class="section-title"><span class="num">PART 3</span> 核心文档</h2>
+  <div class="doc-row">
+    <a href="MISSION.md">🧭 学习使命</a>
+    <a href="RESOURCES.md">📚 资源库 + 案例</a>
+    <a href="GLOSSARY.md">📖 术语表</a>
+    <a href="02-MVP跑通清单.html" onclick="return false" style="opacity:.5">✅ MVP 清单</a>
+    <a href="03-持续优化指南.html" onclick="return false" style="opacity:.5">📈 持续优化</a>
+  </div>
+</section>
+
+<footer>
+  <p>💡 <b>怎么学:</b>按顺序点开第 1 课 → 每课结尾有小测验和动手作业 → 卡住就查速查卡。</p>
+  <p>本课程由 teach skill 工作区生成 · 数据采集于 2026-07-28</p>
+</footer>
+
+</body>
+</html>
