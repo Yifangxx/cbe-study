@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网络与工具速查卡</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="lesson-head">
+  <div class="kicker">跨境电商教学 · 速查卡</div>
+  <h1>网络与工具速查卡</h1>
+  <div class="meta">国内访问方案 · 科学上网 · 软件下载 · 风险提示</div>
+</header>
+
+<div class="callout warn">
+  <strong>⚠️ 合规提示:</strong>本卡只讲<strong>跨境业务必需的网络访问方案</strong>。未经批准使用VPN翻墙在国内属违规行为,请遵守《网络安全法》。建议优先用<strong>合规跨境专线</strong>(企业方案),个人起步期可用<strong>境外服务器自建</strong>作为过渡。本内容仅供学习参考,风险自负。
+</div>
+
+<h2>一、哪些平台必须"科学上网"</h2>
+<table>
+  <thead>
+    <tr><th style="width:24%">平台 / 工具</th><th style="width:14%">访问难度</th><th>说明</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>亚马逊卖家后台</td><td class="tag warn">需稳定梯子</td><td>sellercentral.amazon.com 国内可开但慢、易掉线;后台操作必须稳定IP</td></tr>
+    <tr><td>Google(关键词/趋势)</td><td class="tag warn">必须</td><td>选品调研的核心工具,Google Trends、Keyword Planner 都要</td></tr>
+    <tr><td>ChatGPT / Claude</td><td class="tag warn">必须</td><td>写 Listing、翻译、分析评论的 AI 助手,国内直连不可用</td></tr>
+    <tr><td>YouTube(教程/竞品)</td><td class="tag warn">必须</td><td>看竞品视频、学运营技巧的主要来源</td></tr>
+    <tr><td>Facebook Ads / TikTok</td><td class="tag warn">必须</td><td>站外引流、广告投放后台</td></tr>
+    <tr><td>1688 / 拼多多</td><td class="tag ok">国内直连</td><td>找货源、比价,无需翻墙</td></tr>
+    <tr><td>Shopee / Lazada 后台</td><td class="tag ok">基本直连</td><td>东南亚平台国内访问尚可,偶有波动</td></tr>
+    <tr><td>企业微信 / 钉钉 / 飞书</td><td class="tag ok">直连</td><td>团队协作,无障碍</td></tr>
+  </tbody>
+</table>
+
+<h2>二、网络方案对比(按合规度排序)</h2>
+<table>
+  <thead>
+    <tr><th style="width:18%">方案</th><th style="width:14%">月成本</th><th style="width:20%">合规度</th><th>适用场景</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>企业跨境专线(IPLC/IEPL)</td><td>￥500~3000+</td><td class="tag ok">✅ 合规</td><td>有营业执照的团队,正规跨境业务,稳定可靠</td></tr>
+    <tr><td>境外VPS自建(V2Ray/Shadowsocks)</td><td>$5~20</td><td class="tag warn">⚠️ 灰色</td><td>个人起步过渡,自己搭服务器,技术门槛中等</td></tr>
+    <tr><td>机场(共享节点订阅)</td><td>￥15~50</td><td class="tag warn">⚠️ 灰色</td><td>最便宜,但跑路风险高、IP 易被封,不适合长期</td></tr>
+    <tr><td>免费VPN</td><td>0</td><td class="tag warn">❌ 不推荐</td><td>极不稳定、有隐私泄露风险、可能被钓鱼,千万别用</td></tr>
+  </tbody>
+</table>
+
+<div class="callout tip">
+  <strong>新手建议:</strong>起步期(0~3个月)先用<strong>境外VPS自建</strong>(月成本约$10,可控可迁移);业务跑起来、有了营业执照后,升级到<strong>企业专线</strong>。别碰免费VPN和廉价机场,账号被封的损失远超这点钱。
+</div>
+
+<h2>三、境外VPS自建(推荐起步方案)</h2>
+
+<h3>1. 买服务器</h3>
+<table>
+  <thead>
+    <tr><th>厂商</th><th>价格</th><th>特点</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Vultr</td><td>$6/月起</td><td>按时计费、中文界面、东京/新加坡节点快</td></tr>
+    <tr><td>BandwagonHost(搬瓦工)</td><td>$49.99/年起</td><td>老牌、对中国优化、支付宝付款</td></tr>
+    <tr><td>DigitalOcean</td><td>$6/月起</td><td>稳定、文档全、新用户有$200试用额度</td></tr>
+  </tbody>
+</table>
+
+<h3>2. 装代理软件(一键脚本)</h3>
+<p>买好服务器后,SSH 连上,跑一条命令即可。最常见的是 <strong>233boy 的 V2Ray 脚本</strong>(自行搜索 GitHub)或 <strong>X-UI 面板</strong>。</p>
+<pre><code># 示例(具体地址请搜索最新版)
+bash &lt;(wget -qO- -o- https://raw.githubusercontent.com/.../install.sh)
+</code></pre>
+<p>装完会给你一个链接或二维码,导入客户端即可。</p>
+
+<h3>3. 客户端软件(各平台)</h3>
+<table>
+  <thead>
+    <tr><th>系统</th><th>推荐客户端</th><th>下载渠道</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Windows</td><td>v2rayN</td><td>GitHub 搜 "v2rayN" releases</td></tr>
+    <tr><td>Mac</td><td>V2RayU / ClashX</td><td>GitHub 搜对应名称</td></tr>
+    <tr><td>安卓</td><td>v2rayNG</td><td>GitHub 或 Play 商店</td></tr>
+    <tr><td>iOS</td><td>Shadowrocket(小火箭)</td><td>需非中国区 Apple ID,$2.99</td></tr>
+  </tbody>
+</table>
+
+<h2>四、跨境电商常用软件清单</h2>
+
+<h3>选品 & 数据</h3>
+<table>
+  <thead>
+    <tr><th style="width:22%">软件</th><th style="width:14%">访问</th><th>用途 / 获取</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>卖家精灵 / 鸥鹭</td><td class="tag ok">国内可用</td><td>亚马逊选品数据,中文界面,官网注册</td></tr>
+    <tr><td>Helium 10</td><td class="tag warn">需梯子</td><td>亚马逊全套工具,官网 helium10.com</td></tr>
+    <tr><td>Google Trends</td><td class="tag warn">需梯子</td><td>趋势调研,trends.google.com</td></tr>
+    <tr><td>Jungle Scout</td><td class="tag warn">需梯子</td><td>选品 + 销量估算,junglescout.com</td></tr>
+  </tbody>
+</table>
+
+<h3>Listing & 设计</h3>
+<table>
+  <thead>
+    <tr><th style="width:22%">软件</th><th style="width:14%">访问</th><th>用途 / 获取</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>ChatGPT / Claude</td><td class="tag warn">需梯子</td><td>写标题、五点、A+ 文案</td></tr>
+    <tr><td>DeepL</td><td class="tag ok">国内可用</td><td>翻译质量高于谷歌,deepl.com</td></tr>
+    <tr><td>Canva</td><td class="tag ok">国内可用</td><td>主图/A+图片设计,canva.com(国内版单独)</td></tr>
+    <tr><td>Photoshop</td><td class="tag ok">本地</td><td>专业修图,Adobe 官网或国内代理</td></tr>
+    <tr><td>创客贴 / 稿定设计</td><td class="tag ok">国内可用</td><td>中文版Canva替代,模板多</td></tr>
+  </tbody>
+</table>
+
+<h3>客服 & 协作</h3>
+<table>
+  <thead>
+    <tr><th style="width:22%">软件</th><th style="width:14%">访问</th><th>用途 / 获取</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>企业微信 / 钉钉</td><td class="tag ok">直连</td><td>团队内部沟通</td></tr>
+    <tr><td>WhatsApp</td><td class="tag warn">需梯子</td><td>海外客户沟通,whatsapp.com</td></tr>
+    <tr><td>Skype</td><td class="tag warn">需梯子</td><td>海外电话/视频会议</td></tr>
+    <tr><td>Notion / 飞书</td><td class="tag ok">国内可用</td><td>知识库、SOP 文档</td></tr>
+  </tbody>
+</table>
+
+<h2>五、关键风险与避坑</h2>
+
+<div class="callout warn">
+  <strong>1. 账号关联(最致命)。</strong>亚马逊严禁一个卖家多账号。如果用<strong>不稳定或共享的梯子IP</strong>,可能导致IP被判定关联,直接封店。<strong>解决方案:</strong>操作亚马逊后台时,固定用一个节点(IP尽量不变),最好用专属IP。
+</div>
+
+<div class="callout warn">
+  <strong>2. 机场跑路。</strong>廉价机场($2~5/月)随时可能跑路,你的节点全失效。<strong>解决方案:</strong>自建VPS,数据在自己手里;或同时备2个方案。
+</div>
+
+<div class="callout warn">
+  <strong>3. 钓鱼VPN。</strong>免费/破解版VPN可能窃取你的亚马逊账号密码。<strong>解决方案:</strong>只用开源或知名软件,代码在GitHub可查;绝不输入业务账号密码到不明客户端。
+</div>
+
+<div class="callout tip">
+  <strong>4. iOS 小火箭的 Apple ID。</strong>中国区App Store搜不到Shadowrocket。需要注册一个<strong>非中国区(如美区/港区)Apple ID</strong>才能购买。网上有教程,或直接借朋友的下载。
+</div>
+
+<h2>六、自建 VPS 简易步骤(给小白)</h2>
+<ol>
+  <li><strong>注册 Vultr</strong>(vultr.com,支持支付宝),充值 $10</li>
+  <li><strong>创建服务器</strong>:Location 选 Tokyo/Singapore,OS 选 Debian 12 或 Ubuntu 22.04,套餐选 $6/月</li>
+  <li><strong>拿到 IP 和密码</strong>:服务器列表里会显示 IP,点进去看初始密码</li>
+  <li><strong>SSH 连接</strong>:Windows 用 PowerShell 跑 <code>ssh root@你的IP</code>,输入密码</li>
+  <li><strong>跑一键脚本</strong>:复制 V2Ray/X-UI 安装命令到终端回车(脚本搜 "233boy v2ray github")</li>
+  <li><strong>导入客户端</strong>:脚本会输出一个 vmess:// 链接,复制到 v2rayN/小火箭里即可</li>
+  <li><strong>测速</strong>:打开 youtube.com 或 google.com,能开就成功</li>
+</ol>
+
+<div class="callout ok">
+  <strong>✅ 跑通标志:</strong>能稳定打开 Google、YouTube、ChatGPT,且亚马逊后台不掉线。<strong>成本约 $6~10/月</strong>,比任何机场都稳。
+</div>
+
+<h2>七、什么时候该升级到企业专线</h2>
+<table>
+  <thead>
+    <tr><th>信号</th><th>建议</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>月销售额 &gt; ￥5万</td><td>考虑申请企业跨境专线,固定IP,合规</td></tr>
+    <tr><td>开始投广告(月费 &gt; $500)</td><td>广告后台对IP稳定性要求高,别用共享节点</td></tr>
+    <tr><td>团队 &gt; 3 人同时操作后台</td><td>多人共用一个梯子会互相挤,上专线或多人VPS</td></tr>
+    <tr><td>收到亚马逊视频审核/KYC</td><td>视频面谈对网络稳定性要求极高,专线最稳</td></tr>
+  </tbody>
+</table>
+
+<p style="margin-top:2rem;text-align:center;color:var(--muted);font-size:.85rem">
+  💡 卡住了?把报错截图发我,我帮你诊断是网络问题还是操作问题。<br>
+  本卡更新于 2026-07-28 · 网络环境变化快,方案失效时请反馈
+</p>
+
+</body>
+</html>
