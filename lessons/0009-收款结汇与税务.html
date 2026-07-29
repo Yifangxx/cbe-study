@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第 9 课 · 收款结汇与税务</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="lesson-head">
+  <div class="kicker">进阶课 · 资金与合规</div>
+  <h1>钱怎么收回来,税怎么交</h1>
+  <div class="meta">约 16 分钟 ｜ 关联 <a href="../reference/开店材料速查卡.html">开店材料速查卡</a> ｜ <a href="../reference/网络与工具速查卡.html">网络与工具速查卡</a></div>
+</header>
+
+<p>卖出货、收到外币,但这钱还在海外账户里——怎么安全、合规、低成本地弄回国内人民币?要交哪些税?这一课解决跨境卖家最关心的"钱"的问题。搞错轻则多交手续费,重则涉嫌洗钱被冻结。</p>
+
+<h2>一、收款的完整链路</h2>
+<pre><code>买家付款 → 平台(亚马逊/Shopify) → 第三方收款账户 → 结汇成人民币 → 国内银行卡
+                              ↑
+                    你需要配置的环节
+</code></pre>
+
+<div class="callout tip">
+<strong>关键:钱不会直接到你国内银行卡。</strong>必须经过"第三方收款账户"这一环——它帮你接收外币,再合规结汇成人民币打给你。这个账户的选择决定了手续费和到账速度。
+</div>
+
+<h2>二、主流收款工具对比</h2>
+<table>
+<tr><th style="width:16%">工具</th><th style="width:12%">费率</th><th style="width:18%">到账</th><th>特点</th></tr>
+<tr><td class="tag ok">Payoneer(派安盈)</td><td>1.2%+</td><td>1-3 天</td><td>亚马逊官方推荐,全球通用,提现快</td></tr>
+<tr><td class="tag ok">PingPong</td><td>1%</td><td>1-2 天</td><td>费率最低,中国本土公司,中文服务好</td></tr>
+<tr><td>WorldFirst(万里汇)</td><td>1%</td><td>1-2 天</td><td>蚂蚁旗下,和支付宝打通</td></tr>
+<tr><td>LianLian(连连)</td><td>0.7%</td><td>1-2 天</td><td>费率低,但部分平台支持有限</td></tr>
+<tr><td>Airwallex(空中云汇)</td><td>0.5-1%</td><td>实时</td><td>新兴,费率有竞争力,独立站友好</td></tr>
+</table>
+
+<div class="callout ok">
+<strong>新手建议:PingPong 或 Payoneer。</strong>PingPong 费率最低(1%),中文服务好;Payoneer 全球通用性更强(多平台、多币种)。两个都免费注册,可以先开 PingPong 起步,量大了再开 Payoneer 备用。
+</div>
+
+<h2>三、开户流程(以 PingPong 为例)</h2>
+<ol>
+<li><strong>注册</strong>:pingpongx.com → 用邮箱注册</li>
+<li><strong>提交资料</strong>:营业执照、法人身份证、店铺链接</li>
+<li><strong>审核</strong>:1-3 个工作日</li>
+<li><strong>拿到收款账户</strong>:会给你一个美国/英国/香港的虚拟银行账号</li>
+<li><strong>绑定平台</strong>:在亚马逊/Shopify 后台填这个账号</li>
+<li><strong>收款</strong>:平台打款日(每 14 天)→ 外币到 PingPong → 结汇 → 打到你国内卡</li>
+</ol>
+
+<h2>四、结汇方式(外币→人民币)</h2>
+<table>
+<tr><th style="width:20%">方式</th><th style="width:20%">额度</th><th>说明</th></tr>
+<tr><td class="tag ok">第三方账户结汇</td><td>不受 5 万限制</td><td>PingPong/Payoneer 代为结汇,提供贸易背景即可</td></tr>
+<tr><td>个人结汇(银行)</td><td>每人每年 5 万美金</td><td>额度小,适合小额</td></tr>
+<tr><td>对公结汇</td><td>无上限</td><td>需有进出口权的企业账户</td></tr>
+</table>
+
+<div class="callout warn">
+<strong>个人 5 万美金额度会不够用。</strong>销量起来后,一年收汇远超 5 万美金。<strong>提前用第三方账户结汇</strong>(不受个人额度限制),或注册公司走对公。别用"地下钱庄"或找人代收,涉嫌洗钱,账户会被冻结。
+</div>
+
+<h2>五、税务(新手必懂)</h2>
+
+<h3>1. 销售税(美国)</h3>
+<table>
+<tr><th>情况</th><th>是否交税</th><th>说明</th></tr>
+<tr><td>没有美国 Nexus(连接点)</td><td class="tag ok">不用交</td><td>无办公室/员工/库存在该州</td></tr>
+<tr><td>用了 FBA(有库存)</td><td class="tag warn">可能要交</td><td>库存所在州 = Nexus,需注册税号</td></tr>
+<tr><td>年销售额超阈值</td><td class="tag warn">要交</td><td>各州阈值不同($10万-$50万销售额)</td></tr>
+</table>
+
+<div class="callout tip">
+<strong>好消息:亚马逊 Marketplace Facilitator 法。</strong>亚马逊会代你收缴和申报大部分州的销售税。<strong>新手前期基本不用自己处理</strong>,亚马逊自动扣。等规模大了(年销 $50万+),再请税务师规划多州税号。
+</div>
+
+<h3>2. 欧盟 VAT(增值税)</h3>
+<ul>
+<li><strong>卖到欧盟</strong>必须注册 VAT(德/法/意/西各自注册)</li>
+<li><strong>税率</strong>:19%-25%(各国不同)</li>
+<li><strong>申报</strong>:月度/季度申报</li>
+<li><strong>不注册后果</strong>:货物被海关扣、店铺被封</li>
+</ul>
+
+<h3>3. 国内税务</h3>
+<table>
+<tr><th>税种</th><th>说明</th></tr>
+<tr><td>企业所得税</td><td>利润的 25%(小微企业有优惠,5%-10%)</td></tr>
+<tr><td>增值税</td><td>出口可退税(需有进出口权)</td></tr>
+<tr><td>个人所得税</td><td>分红时交 20%</td></tr>
+</table>
+
+<div class="callout warn">
+<strong>跨境收入必须合规申报。</strong>第三方账户结汇的钱,会进入银行系统,有贸易背景。<strong>别偷税漏税</strong>——金税四期下,资金流水全部透明。合规成本不高(小微企业优惠),被抓的代价极高。
+</div>
+
+<h2>六、成本优化:怎么少花手续费</h2>
+<table>
+<tr><th>优化项</th><th>方法</th><th>节省</th></tr>
+<tr><td>选低费率收款</td><td>PingPong(1%) vs Payoneer(1.2%)</td><td>0.2% × 年流水</td></tr>
+<tr><td>合并提现</td><td>攒到 $5000+ 再提,减少次数费</td><td>每笔固定费 $1-3</td></tr>
+<tr><td>汇率时机</td><td>汇率好时多结(关注 USD/CNY)</td><td>1-2% 波动</td></tr>
+<tr><td>出口退税</td><td>办进出口权,申请退税</td><td>退 9-13%</td></tr>
+</table>
+
+<h2>七、资金安全红线</h2>
+<div class="callout warn">
+<strong>1. 别用个人账户大额收跨境款。</strong>银行会风控冻结,需提供贸易证明,解冻麻烦。用第三方收款账户走正规渠道。
+</div>
+<div class="callout warn">
+<strong>2. 别借别人的收款账户。</strong>账号关联风险,且资金安全无保障。
+</div>
+<div class="callout warn">
+<strong>3. 别参与"代收代付"。</strong>帮别人收款转账,可能卷入洗钱,涉嫌刑事。只收自己店铺的款。
+</div>
+
+<h2>八、资金链管理(现金流)</h2>
+<p>跨境压款周期长,现金流管理是生死线:</p>
+<table>
+<tr><th>环节</th><th>占用资金</th><th>时长</th></tr>
+<tr><td>进货(1688)</td><td>大货款</td><td>付款即占用</td></tr>
+<tr><td>头程海运</td><td>货+运费</td><td>45-60 天</td></tr>
+<tr><td>库存(FBA)</td><td>货值</td><td>卖完前一直占</td></tr>
+<tr><td>平台回款</td><td>销售额</td><td>14 天一次</td></tr>
+<tr><td>结汇到账</td><td>—</td><td>1-3 天</td></tr>
+</table>
+
+<div class="callout tip">
+<strong>现金流比利润重要。</strong>很多卖家"账面赚钱,现金断裂"——货压在海上、库存里,回款还没到,供应商催款。<strong>预留 3-6 个月运营资金</strong>,别把所有钱压在货里。首单小批量(100-200件)试水,别一上来压几千件。
+</div>
+
+<div class="win">
+<div class="label">本课收获</div>
+<p>你懂收款链路,会选收款工具并开户,知道结汇方式和个人额度限制,理解美/欧/国内税务要点,会优化手续费,知道资金安全红线和现金流管理。钱收得回来、收得安全、收得便宜。</p>
+</div>
+
+<h2>小测一下</h2>
+
+<div class="quiz" data-answer="b">
+  <div class="q">年销售额 $20万,个人结汇额度够吗?</div>
+  <ul class="opts">
+    <li><label><input type="radio" name="q1" value="a"> 够,5万美金绰绰有余</label></li>
+    <li><label><input type="radio" name="q1" value="b"> 不够,需用第三方账户结汇</label></li>
+    <li><label><input type="radio" name="q1" value="c"> 找朋友帮忙结汇</label></li>
+  </ul>
+  <div class="reveal"><strong>答案:b。</strong>$20万 = 约 140 万人民币,远超个人每年 5 万美金结汇额度。必须用 PingPong/Payoneer 等第三方账户结汇(不受个人额度限制,凭贸易背景)。找朋友代结汇涉嫌违规,且资金不安全。</div>
+</div>
+
+<div class="quiz" data-answer="a">
+  <div class="q">美国销售税,新手需要自己处理吗?</div>
+  <ul class="opts">
+    <li><label><input type="radio" name="q1" value="a"> 基本不用,亚马逊代收代缴</label></li>
+    <li><label><input type="radio" name="q1" value="b"> 每笔订单都要自己申报</label></li>
+    <li><label><input type="radio" name="q1" value="c"> 不用交,海外卖家免税</label></li>
+  </ul>
+  <div class="reveal"><strong>答案:a。</strong>美国多数州适用 Marketplace Facilitator 法,亚马逊作为平台代收代缴销售税。新手前期不用自己处理。等年销 $50万+ 或注册了多州 Nexus,再请税务师规划。</div>
+</div>
+
+<div class="pager">
+  <a href="0008-广告投放进阶实战.html">← 上一课:广告投放进阶</a>
+  <a href="0010-售后与差评处理SOP.html">下一课:售后与差评 SOP →</a>
+</div>
+
+<div class="callout tip">
+<strong>动手作业:</strong> 注册一个 PingPong 账户(免费),走完注册流程,拿到收款账号。把账号信息截图(隐去敏感数字)发我,我帮你确认配置是否正确。同时列出你预估的首单现金流时间表(何时进货、何时回款)。
+</div>
+
+<script src="../assets/quiz.js"></script>
+</body>
+</html>
